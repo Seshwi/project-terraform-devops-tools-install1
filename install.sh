@@ -30,6 +30,13 @@ sudo systemctl start jenkins
 #---------------------------Maven install -------------
 sudo yum install maven -y
 
+
+#-------------------terraform install--------------------------
+
+sudo wget https://releases.hashicorp.com/terraform/1.7.2/terraform_1.7.2_linux_amd64.zip
+sudo unzip terraform_1.7.2_linux_amd64.zip
+sudo mv terraform /usr/local/bin
+
 #---------------------------kubectl install ---------------
 sudo curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
 sudo chmod +x ./kubectl
